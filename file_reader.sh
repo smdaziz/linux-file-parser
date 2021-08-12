@@ -7,6 +7,6 @@ fi
 #while IFS=',' read -r -a array; do
 #    perl perl_script.pl ${array[0]} ${array[1]}
 #done < "$1"
-while read -r -a path; do
+while read -r path; do
     perl perl_script.pl $path
 done < "$1"
