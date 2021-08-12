@@ -8,5 +8,5 @@ fi
 #    perl perl_script.pl ${array[0]} ${array[1]}
 #done < "$1"
 while read -r -a path; do
-    perl perl_script.pl path
+    perl perl_script.pl $path
 done < "$1"
